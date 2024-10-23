@@ -1,13 +1,14 @@
-
 import { createApp } from 'vue';
-import { createPinia } from 'pinia';
+import VueScreen from 'vue-screen';
 
 import App from './App.vue';
-// import router from './router'
+import router from './router/index.js';
+
+import './style/main.less';
 
 const app = createApp(App);
 
-app.use(createPinia());
-// app.use(router)
+app.use(VueScreen);
+app.use(router);
 
 app.mount('#app');

@@ -1,0 +1,37 @@
+@import './variable';
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: @dark;
+  font-family: @text;
+  background: @light;
+}
+
+h1,
+h2 {
+  color: @light;
+  font-family: @title;
+  font-size: @d-xl;
+}
+
+a {
+  color: @dark;
+  text-decoration: none;
+}
+
+main,
+nav {
+  margin: auto;
+  max-width: 1200px;
+}

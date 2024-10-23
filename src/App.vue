@@ -1,10 +1,12 @@
-<script setup></script>
+<script setup>
+import { RouterView } from 'vue-router';
+
+import NavComp from './components/baseComponent/NavComp.vue';
+</script>
 
 <template>
-  <div>
-  </div>
+  <NavComp />
+  <RouterView />
 </template>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>
