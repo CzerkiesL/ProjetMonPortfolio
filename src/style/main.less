@@ -35,6 +35,29 @@ a {
 
 main,
 nav {
-  margin: auto;
   max-width: 1200px;
+}
+
+main {
+  padding: 10px;
+  margin: 50px auto;
+  @media screen and (max-width: 600px) {
+    margin: 20px;
+  }
+}
+
+nav {
+  margin: auto;
+}
+
+p {
+  font-weight: bold;
+  font-size: @d-m;
+  @media screen and (max-width: 600px) {
+    font-size: @m-m;
+  }
+}
+
+strong {
+  color: @strong;
 }

@@ -1,16 +1,18 @@
 <script setup>
 import { ref } from 'vue';
+import { useDisplayType } from '@/store/displayType';
 import { RouterLink } from 'vue-router';
 
-const isModaleOpen = ref(false);
+const displayStore = useDisplayType();
 
+const isModaleOpen = ref(false);
 function toggleModale() {
   isModaleOpen.value = !isModaleOpen.value;
 }
 </script>
 
 <template>
-  <nav v-if="$screen.width > 600" id="desktop-nav">
+  <nav v-if="displayStore.isDesktop" id="desktop-nav">
     <router-link to="/">A propos</router-link>
     <router-link to="/project">Projets</router-link>
     <router-link to="/contact">Me contacter</router-link>

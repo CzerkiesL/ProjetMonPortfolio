@@ -1,15 +1,11 @@
 <script setup>
 import BannerComp from '../components/baseComponent/BannerComp.vue';
+import AboutComp from '../components/aboutViewComponent/AboutComp.vue';
 </script>
 
 <template>
   <BannerComp subTitle="Développeur Web Junior" />
-  <main>
-    <img src="" alt="">
-    <p></p>
-    <p></p>
-    <p></p>
-  </main>
+  <AboutComp />
 </template>
 
 <style lang="less"></style>
