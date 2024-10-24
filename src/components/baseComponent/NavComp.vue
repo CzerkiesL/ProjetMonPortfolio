@@ -40,7 +40,7 @@ function toggleModale() {
 
 /////////////////////////////////////  STYLE NAVIGATION VERSION DESKTOP
 #desktop-nav {
-  padding: 10px;
+  padding: 20px;
   display: flex;
   justify-content: space-evenly;
   a {
@@ -50,14 +50,15 @@ function toggleModale() {
 
 /////////////////////////////////////  STYLE NAVIGATION VERSION MOBILE
 #mobile-nav {
-  position: absolute;
+  position: relative;
   z-index: 10;
   width: 100%;
+  height: 0;
   .burger-btn {
+    position: fixed;
     z-index: 10;
-    margin: 20px;
-    float: right;
-    position: relative;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
     width: 60px;
     height: 60px;
@@ -73,10 +74,9 @@ function toggleModale() {
       transition: all 0.3s ease;
     }
   }
-
   #modale-bg {
     z-index: -1;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     background: @dark;
@@ -84,19 +84,21 @@ function toggleModale() {
     transform-origin: bottom;
     transition: all 0.3s ease;
   }
-
   #modale {
+    position: fixed;
+    top: 50px;
+    right: 50px;
     z-index: 5;
-    padding: 20px;
+    overflow: hidden;
+    padding: 20px 0;
     border-radius: 25px;
     border: @border-3;
-    margin: 50px auto;
     width: 80%;
     background: @light;
     transform-origin: top right;
     transition: all 0.3s ease;
     nav {
-      width: 100%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -185,6 +187,9 @@ a {
   position: relative;
   font-weight: 600;
   transition: color 0.3s ease;
+  &:hover {
+    color: @strong;
+  }
   &::after {
     content: '';
     position: absolute;
