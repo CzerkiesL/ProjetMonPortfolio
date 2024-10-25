@@ -37,7 +37,7 @@ function toggleModale() {
   </div>
 </template>
 
-<style lang="less">
+<style scoped lang="less">
 @import '../../style/variable.less';
 
 /////////////////////////////////////  STYLE NAVIGATION VERSION DESKTOP
@@ -186,6 +186,7 @@ function toggleModale() {
 
 ///////////////////////////////////// STYLE COMMUN DES LIENS
 a {
+  color: @dark;
   position: relative;
   font-weight: 600;
   transition: color 0.3s ease;

@@ -7,7 +7,7 @@ export const useDisplayType = defineStore('displayType', {
   }),
   actions: {
     changeType() {
-      if (screen.width > 600) {
+      if (screen.width > 700) {
         this.displayName = 'desktop';
         this.isDesktop = true;
       } else {

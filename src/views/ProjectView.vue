@@ -1,5 +1,6 @@
 <script setup>
 import BannerComp from '../components/baseComponent/BannerComp.vue';
+
 </script>
 
 <template>
