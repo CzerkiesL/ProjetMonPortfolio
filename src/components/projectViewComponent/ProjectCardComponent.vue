@@ -80,11 +80,13 @@ function openCard() {
 }
 
 .project-card.mobile {
-  margin: 45px 25px;
+  margin: 45px auto;
+  max-width: 500px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   .img-container {
-    height: 350px;
+    height: 250px;
     border-bottom: @border-3;
   }
   .card-content {
@@ -111,7 +113,7 @@ function openCard() {
     background: @light;
     font-weight: 600;
     font-size: @d-s;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 600) {
       font-size: @m-s;
     }
   }

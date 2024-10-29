@@ -63,7 +63,8 @@ nav {
 }
 
 p,
-li {
+li,
+label {
   font-weight: bold;
   font-size: @d-m;
   @media screen and (max-width: 600px) {
@@ -81,12 +82,12 @@ strong {
   margin: 0 10px;
   cursor: pointer;
   background: @light;
-  font-family: @title;
+  font-family: @text;
   font-weight: bold;
   text-align: center;
-  font-size: @d-l;
+  font-size: @d-m;
   @media screen and (max-width: 600px) {
-    font-size: @m-l;
+    font-size: @m-m;
   }
   &.btn-round {
     border-radius: @round;
