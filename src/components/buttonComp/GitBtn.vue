@@ -1,19 +1,20 @@
-<script setup>
-function handleClick() {
-  window.open('https://github.com/CzerkiesL', '_blank');
-}
-</script>
+<script></script>
 
 <template>
-  <button aria-label="github" @click="handleClick()" class="btn btn-round">
+  <a
+    aria-label="github"
+    href="https://github.com/CzerkiesL"
+    target="_blank"
+    class="btn btn-round"
+  >
     <font-awesome-icon icon="fa-brands fa-github" />
-  </button>
+  </a>
 </template>
 
 <style scoped lang="less">
 @import '../../style/variable.less';
 
-button {
+a {
   color: @git;
   transition: all 0.3s ease;
   &:hover {

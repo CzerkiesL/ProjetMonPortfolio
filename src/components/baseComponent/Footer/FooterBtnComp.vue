@@ -7,14 +7,12 @@ import CvBtn from '../../buttonComp/CvBtn.vue';
 </script>
 
 <template>
-  <div>
-    <div class="btn-container">
-      <CvBtn class="footer-btn" />
-      <GitBtn class="footer-btn" />
-      <MailBtn class="footer-btn" />
-      <LinkedinBtn class="footer-btn" />
-      <TwitterBtn class="footer-btn" />
-    </div>
+  <div class="btn-container">
+    <CvBtn class="footer-btn" />
+    <GitBtn class="footer-btn" />
+    <MailBtn class="footer-btn" />
+    <LinkedinBtn class="footer-btn" />
+    <TwitterBtn class="footer-btn" />
   </div>
 </template>
 
@@ -27,10 +25,14 @@ import CvBtn from '../../buttonComp/CvBtn.vue';
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 25px;
+  @media screen and (max-width: 600px) {
+    gap: 0px;
+  }
   .footer-btn {
     height: 50px;
     width: 50px;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 500px) {
       height: 40px;
       width: 40px;
     }

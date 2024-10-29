@@ -12,7 +12,6 @@ import { RouterLink } from 'vue-router';
 @import '../../style/variable.less';
 
 a {
-  align-content: center;
   color: @email;
   transition: all 0.3s ease;
   &:hover {

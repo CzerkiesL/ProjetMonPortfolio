@@ -1,19 +1,20 @@
-<script setup>
-function handleClick() {
-  window.open('https://www.linkedin.com/in/ludovicczerkies/', '_blank');
-}
-</script>
+<script></script>
 
 <template>
-  <button aria-label="linkedine" @click="handleClick()" class="btn btn-round">
+  <a
+    aria-label="linkedine"
+    href="https://www.linkedin.com/in/ludovicczerkies/"
+    target="_blank"
+    class="btn btn-round"
+  >
     <font-awesome-icon icon="fa-brands fa-linkedin-in" />
-  </button>
+  </a>
 </template>
 
 <style scoped lang="less">
 @import '../../style/variable.less';
 
-button {
+a {
   color: @linkedin;
   transition: all 0.3s ease;
   &:hover {

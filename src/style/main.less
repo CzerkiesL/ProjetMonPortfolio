@@ -27,7 +27,21 @@ h2 {
   }
 }
 
+h4 {
+  color: @strong;
+  text-decoration: underline;
+  font-size: @d-m;
+  @media screen and (max-width: 600px) {
+    font-size: @m-m;
+  }
+}
+
+li {
+  list-style: none;
+}
+
 a {
+  align-content: center;
   text-decoration: none;
 }
 
@@ -48,7 +62,8 @@ nav {
   margin: auto;
 }
 
-p {
+p,
+li {
   font-weight: bold;
   font-size: @d-m;
   @media screen and (max-width: 600px) {

@@ -1,19 +1,20 @@
-<script setup>
-function handleClick() {
-  window.open('https://x.com/czerkies61759', '_blank');
-}
-</script>
+<script></script>
 
 <template>
-  <button aria-label="twitter" @click="handleClick()" class="btn btn-round">
+  <a
+    aria-label="twitter"
+    href="https://x.com/czerkies61759"
+    target="_blank"
+    class="btn btn-round"
+  >
     <font-awesome-icon icon="fa-brands fa-x-twitter" />
-  </button>
+  </a>
 </template>
 
 <style scoped lang="less">
 @import '../../style/variable.less';
 
-button {
+a {
   color: @twitter;
   transition: all 0.3s ease;
   &:hover {
