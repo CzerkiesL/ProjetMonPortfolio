@@ -6,8 +6,10 @@ import ProjectList from '../assets/data/Projects.json';
 
 <template>
   <BannerComp subTitle="Mes Réalisation" />
-  <main>
-    <h3></h3>
+  <main id="about">
+    <h3>
+      Quelque petit projet realiser avec les différente techologie apprise:
+    </h3>
     <ul>
       <li v-for="(project, index) in ProjectList" :key="project.id">
         <ProjectCardComponent
@@ -19,4 +21,16 @@ import ProjectList from '../assets/data/Projects.json';
   </main>
 </template>
 
-<style lang="scss"></style>
+<style lang="less">
+@import '../style/variable.less';
+
+#about {
+  h3 {
+    color: @strong;
+    font-size: @d-l;
+    @media screen and (max-width: 600px) {
+      font-size: @m-l;
+    }
+  }
+}
+</style>

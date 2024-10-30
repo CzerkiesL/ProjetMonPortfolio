@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue';
-import BannerBackground from '../../assets/image/BannerBackground.jpg';
+import BannerBackground from '../../assets/image/BannerBackground.webp';
 
 const props = defineProps(['subTitle']);
 
@@ -42,6 +42,7 @@ header {
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(@dark, 0.5);
   img {
+    height: 100%;
     position: absolute;
     z-index: -1;
     filter: blur(4px);

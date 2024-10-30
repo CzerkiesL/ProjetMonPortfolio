@@ -2,7 +2,7 @@
 import { onMounted } from 'vue';
 import { useDisplayType } from '@/store/displayType';
 import { launchAboutContentAnimation } from '@/utilities/aboutContentAnimation';
-import Avatar from '../../assets/image/Avatar.jpg';
+import Avatar from '../../assets/image/Avatar.webp';
 
 const displayStore = useDisplayType();
 

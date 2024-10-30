@@ -19,7 +19,7 @@ function toggleModale() {
   </nav>
 
   <div v-else id="mobile-nav" :class="isModaleOpen ? 'open' : 'close'">
-    <button @click="toggleModale" class="burger-btn">
+    <button aria-label="burger" @click="toggleModale" class="burger-btn">
       <div class="line line-top"></div>
       <div class="line line-mid"></div>
       <div class="line line-bot"></div>

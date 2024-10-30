@@ -10,6 +10,8 @@ const routes = [
     component: AboutView,
     meta: {
       title: 'Ludovic Czerkies | A Propos',
+      description:
+        "Portfolio developpeur web de Ludovic Czerkies, cette page contient quelque information a propos de mon parcour et des différente technologie que j'ai apprise.",
     },
   },
   {
@@ -17,6 +19,8 @@ const routes = [
     component: ProjectView,
     meta: {
       title: 'Ludovic Czerkies | Mes Realisations',
+      description:
+        "Portfolio developpeur web de Ludovic Czerkies, cette page contient quelque projet que j'ai realiser avec quelque information a propos de c'est projet, ainsi que les liens github les concernant",
     },
   },
   {
@@ -24,6 +28,8 @@ const routes = [
     component: ContactView,
     meta: {
       title: 'Ludovic Czerkies | Me Contacter',
+      description:
+        "Portfolio developpeur web de Ludovic Czerkies, cette page contient les liens pour accéder a mes réseaux ainsi qu'a mon cv et vous donne la possibilité de m'envoyer directement un mail au besoin.",
     },
   },
 ];
@@ -34,8 +40,9 @@ const router = createRouter({
 });
 
 router.beforeEach(to => {
-  const title = to.meta.title;
+  const { title, description } = to.meta;
   document.title = title;
+  document.description = description;
 });
 
 export default router;
