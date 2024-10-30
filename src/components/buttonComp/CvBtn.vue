@@ -1,6 +1,7 @@
 <script setup>
+import CV from '../../assets/pdf/CV_Developpeur_Web_CZERKIES_LUDOVIC.pdf';
 function handleClick() {
-  console.log('cv');
+  window.open(CV, '_blank');
 }
 </script>
 

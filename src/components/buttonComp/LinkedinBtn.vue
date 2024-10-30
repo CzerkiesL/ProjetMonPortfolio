@@ -2,7 +2,7 @@
 
 <template>
   <a
-    aria-label="linkedine"
+    aria-label="linkedin"
     href="https://www.linkedin.com/in/ludovicczerkies/"
     target="_blank"
     class="btn btn-round"
