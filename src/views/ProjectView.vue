@@ -2,6 +2,14 @@
 import BannerComp from '../components/baseComponent/BannerComp.vue';
 import ProjectCardComponent from '../components/projectViewComponent/ProjectCardComponent.vue';
 import ProjectList from '../assets/data/Projects.json';
+
+import BookiImg from '../assets/image/Booki.webp';
+import SophieBluelImg from '../assets/image/SophieBluel.webp';
+import NinaImg from '../assets/image/NinaCarducci.webp';
+import KasaImg from '../assets/image/Kasa.webp';
+import GrimoireImg from '../assets/image/MonVieuxGrimoire.webp';
+
+const cardCoverImg = [BookiImg, SophieBluelImg, NinaImg, KasaImg, GrimoireImg];
 </script>
 
 <template>
@@ -14,6 +22,7 @@ import ProjectList from '../assets/data/Projects.json';
       <li v-for="(project, index) in ProjectList" :key="project.id">
         <ProjectCardComponent
           :Project="project"
+          :Cover="cardCoverImg[index]"
           :class="index % 2 === 0 ? 'left' : 'right'"
         />
       </li>

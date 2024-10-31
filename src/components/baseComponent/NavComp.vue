@@ -13,9 +13,9 @@ function toggleModale() {
 
 <template>
   <nav v-if="displayStore.isDesktop" id="desktop-nav">
-    <router-link to="/">A propos</router-link>
-    <router-link to="/project">Projets</router-link>
-    <router-link to="/contact">Me contacter</router-link>
+    <router-link to="/ProjetMonPortfolio/">A propos</router-link>
+    <router-link to="/ProjetMonPortfolio/project">Projets</router-link>
+    <router-link to="/ProjetMonPortfolio/contact">Me contacter</router-link>
   </nav>
 
   <div v-else id="mobile-nav" :class="isModaleOpen ? 'open' : 'close'">

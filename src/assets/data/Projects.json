@@ -1,15 +1,15 @@
 [
   {
     "id": "01",
-    "cover": "src/assets/image/projectImage/Booki.webp",
+    "cover": "src/assets/image/Booki.webp",
     "description": "Site Internet qui permettant aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
-    "objectif": "integration de l'interface responsive du site en HTML et CSS en respectant les maquette figma.",
+    "objectif": "Integration de l'interface responsive du site en HTML et CSS en respectant les maquette figma.",
     "technology": ["HTML", "CSS"],
     "gitHubLink": "https://github.com/CzerkiesL/projetBookiOpenClassrooms.git"
   },
   {
     "id": "02",
-    "cover": "src/assets/image/projectImage/SophieBluel.webp",
+    "cover": "src/assets/image/SophieBluel.webp",
     "description": "Site portfolio d’une architecte d’intérieur.",
     "objectif": "Creation d'un système d'authentification, recuperation de d'information sur une base données et ajout/suppression de photo.",
     "technology": ["HTML", "CSS", "Javascript"],
@@ -17,23 +17,29 @@
   },
   {
     "id": "03",
-    "cover": "src/assets/image/projectImage/NinaCarducci.webp",
+    "cover": "src/assets/image/NinaCarducci.webp",
     "description": "Portfolio de photographe.",
     "objectif": "Optimisation d'un portfolio de photograhe en terme de performance, de SEO et d'accessibilité.",
-    "technology": ["HTML", "CSS", "Javascript"],
+    "technology": [
+      "Lightouse",
+      "Rich Snippet Google",
+      "OpenGraph",
+      "Twitter Cards",
+      "Schema.org"
+    ],
     "gitHubLink": "https://github.com/CzerkiesL/ProjetNinaCarducciOpenClassroom.git"
   },
   {
     "id": "04",
-    "cover": "src/assets/image/projectImage/Kasa.webp",
+    "cover": "src/assets/image/Kasa.webp",
     "description": "Site de location d'appartements pour 'Kasa'",
-    "objectif": "développer une application responsive avec React.js en respectant une maquette et en utilisant des composant réutilisable.",
+    "objectif": "Développer une application responsive avec React.js en respectant une maquette et en utilisant des composant réutilisable.",
     "technology": ["React.js", "React-Router", "SASS"],
     "gitHubLink": "https://github.com/CzerkiesL/projetKasaOpenClassroom.git"
   },
   {
     "id": "05",
-    "cover": "src/assets/image/projectImage/MonVieuxGrimoire.webp",
+    "cover": "src/assets/image/MonVieuxGrimoire.webp",
     "description": "Site de notation de livres.",
     "objectif": "Creer un site avec un système d'authentification qui permet l'ajout, la modification et la suppression de livre.",
     "technology": [

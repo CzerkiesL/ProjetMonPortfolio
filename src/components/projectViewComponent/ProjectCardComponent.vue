@@ -4,7 +4,7 @@ import { useDisplayType } from '@/store/displayType';
 
 const displayStore = useDisplayType();
 
-const props = defineProps(['Project']);
+const props = defineProps(['Project', 'Cover']);
 const techUse = props.Project.technology.join(', ');
 
 const isCardOpen = ref(false);
@@ -16,7 +16,7 @@ function openCard() {
 <template>
   <section class="project-card" :class="displayStore.displayName">
     <div class="img-container">
-      <img :src="props.Project.cover" alt="Photo du projet" />
+      <img :src="Cover" alt="Photo du projet" />
     </div>
     <div
       :class="[
@@ -33,7 +33,7 @@ function openCard() {
         <p>{{ props.Project.objectif }}</p>
       </div>
       <div class="card-content-section">
-        <h4>technologie:</h4>
+        <h4>Technologie:</h4>
         <p>{{ techUse }}</p>
       </div>
       <div class="card-content-section">
