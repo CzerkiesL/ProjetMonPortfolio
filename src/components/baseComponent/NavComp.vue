@@ -29,9 +29,9 @@ function toggleModale() {
 
     <div @click="toggleModale" id="modale">
       <nav>
-        <router-link to="/">A propos</router-link>
-        <router-link to="/project">Projets</router-link>
-        <router-link to="/contact">Me contacter</router-link>
+        <router-link to="/ProjetMonPortfolio/">A propos</router-link>
+        <router-link to="/ProjetMonPortfolio/project">Projets</router-link>
+        <router-link to="/ProjetMonPortfolio/contact">Me contacter</router-link>
       </nav>
     </div>
   </div>

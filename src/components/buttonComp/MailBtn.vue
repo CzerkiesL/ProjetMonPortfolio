@@ -3,7 +3,11 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-  <RouterLink aria-label="me-contacter" class="btn btn-round" to="/contact">
+  <RouterLink
+    aria-label="me-contacter"
+    class="btn btn-round"
+    to="/ProjetMonPortfolio/contact"
+  >
     <font-awesome-icon icon="fa-solid fa-at" />
   </RouterLink>
 </template>
